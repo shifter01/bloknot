@@ -1,4 +1,12 @@
 class Post
+  def self.post_types
+    [Memo, Link, Tasks]
+  end
+
+  def self.create(type_index)
+    return post_types[type_index].new
+  end
+
   def initialize
     @time = Time.now
     @text = nil
