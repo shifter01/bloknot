@@ -19,6 +19,7 @@ class Post
   end
   def save
     file = File.new(file_path, "w:UTF-8")
+    to_strings.pop
     for item in to_strings do
       file.puts(item)
     end

@@ -6,10 +6,10 @@ if Gem.win_platform?
     io.set_encoding(Encoding.default_external, Encoding.default_internal)
   end
 end
-require_relative 'Post.rb'
-require_relative 'link.rb'
-require_relative 'memo.rb'
-require_relative 'tasks.rb'
+require_relative 'lib/Post.rb'
+require_relative 'lib/link.rb'
+require_relative 'lib/memo.rb'
+require_relative 'lib/tasks.rb'
 
 puts "Блокнот 1.0"
 puts "Что записать в блокнот?"
